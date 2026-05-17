@@ -1,65 +1,34 @@
 # Xueqing Hu — Academic Homepage
 
-A compact, one-page academic website for GitHub Pages.
+A compact bilingual academic website for GitHub Pages.
 
 ## Files
 
-- `index.html` — main content. Most future updates happen here.
-- `assets/styles.css` — visual style.
+- `index.html` — English homepage.
+- `zh.html` — Chinese homepage.
+- `assets/styles.css` — shared visual style.
 - `.nojekyll` — tells GitHub Pages to publish the static files directly.
 
-## Fastest deployment
+## How to update
 
-### Option A — Personal GitHub Pages site
+Most content updates only require editing:
 
-1. Create a new GitHub repository named:
+- `index.html` for English content.
+- `zh.html` for Chinese content.
+- `assets/styles.css` only for visual style.
 
-   ```text
-   YOUR-GITHUB-USERNAME.github.io
-   ```
+When adding a new publication, update both `index.html` and `zh.html`.
 
-2. Upload all files in this folder to the repository root.
+## GitHub Pages deployment
 
-3. Commit the files.
-
-4. Open:
-
-   ```text
-   https://YOUR-GITHUB-USERNAME.github.io
-   ```
-
-### Option B — Project site
-
-1. Create any repository, for example:
-
-   ```text
-   academic-homepage
-   ```
-
-2. Upload all files in this folder to the repository root.
-
-3. Go to **Settings → Pages**.
-
-4. Under **Build and deployment**, choose:
-   - Source: `Deploy from a branch`
-   - Branch: `main`
-   - Folder: `/root`
-
-5. Open:
-
-   ```text
-   https://YOUR-GITHUB-USERNAME.github.io/academic-homepage/
-   ```
-
-## Before publishing
-
-Search in `index.html` for:
+Upload these files to the root of your `xueqing-hu.github.io` repository:
 
 ```text
-[Your MSc university]
-[Title of your MSc-related paper]
+index.html
+zh.html
+README.md
+.nojekyll
+assets/styles.css
 ```
 
-Replace these placeholders with final information.
-
-Also replace the `#` links for Google Scholar, ORCID, and GitHub when ready.
+Then commit the changes. GitHub Pages will update automatically.
